@@ -1,10 +1,13 @@
-Our script performs the following tasks:
+**Task**
+As a SysOps engineer, I have written a bash script called **create_users.sh** that reads a text file containing the employee’s usernames and group names, where each line is formatted as user;groups.
 
-Checks if the script is run as root: Ensures the script has the necessary permissions to create users and groups.
-Validates the input file: Ensures a filename is provided as an argument.
-Defines log and secure file paths: Sets up paths for logging actions and securely storing passwords.
-Creates or empties the log and secure files: Initializes the files for logging and password storage.
-Logs messages: Uses a function to append messages to the log file with timestamps.
-Reads the input file: Processes each line in the file, creating users and groups as specified.
-Generates random passwords: Creates secure passwords for each user.
-Sets up home directories and permissions: Ensures each user has a secure home directory.
+The script would perform the following tasks:
+
+Check if the script is run as root: Ensure the script has the necessary permissions to create users and groups.
+Validate the input file: Ensure a filename is provided as an argument.
+Define log and secure file paths: Set up paths for logging actions and securely storing passwords.
+Create the log and secure files: Initialize the files for logging and password storage.
+Log messages: By a defined function, it would append messages to the log file with timestamps.
+Read the input file: Process each line in the file, creating users and groups as specified.
+Generate random passwords: Create secure passwords for each user.
+Set up home directories and permissions: Ensure each user has a secure home directory.
