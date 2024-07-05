@@ -1,4 +1,6 @@
-**Task**
+**Task**:
+
+
 As a SysOps engineer, I have written a bash script called **create_users.sh** that reads a text file containing the employee’s usernames and group names, where each line is formatted as user;groups.
 
 The script would perform the following tasks:
