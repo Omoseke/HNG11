@@ -1,25 +1,25 @@
 #!/bin/bash
 
-# Check if the script is run as root
+# Checking if the script is run as root
 if [ "$(id -u)" -ne 0 ]; then
     echo "This script must be run as root" >&2
     exit 1
 fi
 
-# Check if a file was provided
+# Checking if a file was provided
 if [ -z "$1" ]; then
     echo "Usage: $0 <filename>" >&2
     exit 1
 fi
 
-# Define log and secure file paths
+# Defining log and secure file paths
 LOG_FILE="/var/log/user_management.log"
 SECURE_FILE="/var/secure/user_passwords.csv"
 
-# Create the secure directory if it doesn't exist
+# Creating  the secure directory 
 mkdir -p /var/secure
 
-# Create or empty the log and secure files
+# Creating the log and secure files
 > "$LOG_FILE"
 > "$SECURE_FILE"
 
